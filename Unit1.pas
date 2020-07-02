@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, System.DateUtils;
 
 type
-  TForm1 = class(TForm)
+  TfrmMain = class(TForm)
     Timer1: TTimer;
     Memo1: TMemo;
     procedure FormShow(Sender: TObject);
@@ -22,25 +22,25 @@ type
   end;
 
 var
-  Form1: TForm1;
+  frmMain: TfrmMain;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm1.FormClose(Sender: TObject; var Action: TCloseAction);
+procedure TfrmMain.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
     Memo1.Lines.SaveToFile('d:\temp.txt');
 end;
 
-procedure TForm1.FormShow(Sender: TObject);
+procedure TfrmMain.FormShow(Sender: TObject);
 begin
   Memo1.Clear;
   sd := now();
   Timer1.Enabled := true;
 end;
 
-procedure TForm1.Timer1Timer(Sender: TObject);
+procedure TfrmMain.Timer1Timer(Sender: TObject);
 var
   ks: integer;
   r: string;

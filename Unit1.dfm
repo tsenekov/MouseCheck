@@ -1,4 +1,4 @@
-object Form1: TForm1
+object frmMain: TfrmMain
   Left = 0
   Top = 0
   Caption = 'Hit numlock'
@@ -23,12 +23,8 @@ object Form1: TForm1
     Width = 559
     Height = 234
     Align = alClient
-    Lines.Strings = (
-      'Memo1')
     ScrollBars = ssVertical
     TabOrder = 0
-    ExplicitWidth = 629
-    ExplicitHeight = 293
   end
   object Timer1: TTimer
     Enabled = False
