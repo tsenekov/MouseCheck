@@ -2,7 +2,7 @@ program mousecheck;
 
 uses
   Vcl.Forms,
-  Unit1 in 'Unit1.pas' {frmMain};
+  Main in 'Main.pas' {frmMain};
 
 {$R *.res}
 
